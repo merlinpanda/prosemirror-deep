@@ -4,6 +4,9 @@ import { defineConfig } from "vitepress";
 export default defineConfig({
   title: "ProseMirror Deep Leaning",
   description: "深入学习prosemirror",
+
+  base: "/prosemirror-deep/",
+
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
