@@ -1,17 +1,19 @@
-# Reference manual
+# 参考手册
 
-This is the reference manual for the ProseMirror rich text editor. It lists and describes the full public API exported by the library. For more introductory material, please see the guide.
+这是 [ProseMirror](https://prosemirror.net/) 富文本编辑器的参考手册。它列出并描述了该库导出的全部公共 API。如需更多入门资料，请[参阅指南](/document/)。
 
-ProseMirror is structured as a number of separate modules. This reference manual describes the exported API per module. If you want to use something from the prosemirror-state module, for example, you can import it like this:
+ProseMirror 由多个独立模块组成。本参考手册介绍了每个模块的输出 API。例如，如果你想使用 `prosemirror-state` 模块中的内容，可以这样导入：
 
 ```
 var EditorState = require("prosemirror-state").EditorState
 var state = EditorState.create({schema: mySchema})
 ```
 
-Or, using ES6 syntax:
+或者使用ES6写法：
 
 ```
 import {EditorState} from "prosemirror-state"
 let state = EditorState.create({schema: mySchema})
 ```
+
+## 相关概念

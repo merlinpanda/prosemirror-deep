@@ -62,12 +62,16 @@ export default defineConfig({
       ],
       api: [
         {
-          text: "Reference manual",
+          text: "参考手册",
           link: "/api/",
         },
         {
-          text: "prosemirror-state",
+          text: "prosemirror-state模块",
           items: [
+            {
+              text: "简介",
+              link: "/api/prosemirror-state",
+            },
             {
               text: "Editor State",
               link: "/api/editor-state",
@@ -75,6 +79,10 @@ export default defineConfig({
             {
               text: "Selection",
               link: "/api/selection",
+            },
+            {
+              text: "Plugin System",
+              link: "/api/plugin-system",
             },
           ],
         },

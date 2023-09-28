@@ -1,7 +1,9 @@
 // https://vitepress.dev/guide/custom-theme
 import { h } from 'vue'
+import ArcoVue from '@arco-design/web-vue';
 import Theme from 'vitepress/theme'
-import './style.css'
+import '@arco-design/web-vue/dist/arco.less';
+import './style.less'
 
 export default {
   extends: Theme,
@@ -11,6 +13,6 @@ export default {
     })
   },
   enhanceApp({ app, router, siteData }) {
-    // ...
+    app.use(ArcoVue)
   }
 }

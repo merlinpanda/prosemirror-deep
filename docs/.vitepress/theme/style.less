@@ -8,7 +8,7 @@
  *
  * Each colors have exact same color scale system with 3 levels of solid
  * colors with different brightness, and 1 soft color.
- * 
+ *
  * - `XXX-1`: The most solid color used mainly for colored text. It must
  *   satisfy the contrast ratio against when used on top of `XXX-soft`.
  *
@@ -129,6 +129,10 @@
   --vp-custom-block-tip-code-bg: var(--vp-c-brand-soft);
 }
 
+body {
+  font-size: 16px;
+}
+
 /**
  * Component: Algolia
  * -------------------------------------------------------------------------- */
@@ -137,3 +141,17 @@
   --docsearch-primary-color: var(--vp-c-brand-1) !important;
 }
 
+.vp-doc h4, .vp-doc h5, .vp-doc h6 {
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+
+pre, code, kbd, samp {
+  font-family: var(--vp-font-family-mono);
+}
+
+p, li {
+  font-weight: 300;
+  color: #64748b;
+}
